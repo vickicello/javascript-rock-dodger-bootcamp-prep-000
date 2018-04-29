@@ -34,19 +34,17 @@ function checkCollision(rock) {
 
     const rockRightEdge = rockLeftEdge+20;
 
-    if(((rockLeftEdge<dodgerLeftEdge)&&(rockRightEdge>dodgerLeftEdge)) || ((rockLeftEdge>dodgerLeftEdge)&&(rockRightEdge<dodgerRightEdge)) || ((rockLeftEdge<dodgerRightEdge)&&(rockRightEdge>dodgerRightEdge))) {
+    if (((rockLeftEdge<dodgerRightEdge)&&(rockRightEdge>dodgerLeftEdge)) || ((rockLeftEdge>dodgerLeftEdge)&&(rockRightEdge<dodgerRightEdge)) || ((rockLeftEdge<dodgerRightEdge)&&(rockRightEdge>dodgerRightEdge))) {
       return true;
-      
-      (((rockLeftEdge<dodgerRightEdge)&&(rockRightEdge>dodgerLeftEdge)) || ((rockLeftEdge>dodgerLeftEdge)&&(rockRightEdge<dodgerRightEdge)) || ((rockLeftEdge<dodgerRightEdge)&&(rockRightEdge>dodgerRightEdge))
     }
   }
 }
 
 function createRock(x) {
-  const rock = document.createElement('div')
+  const rock = document.createElement('div');
 
-  rock.className = 'rock'
-  rock.style.left = `${x}px`
+  rock.className = 'rock';
+  rock.style.left = `${x}px`;
 
   // Hmmm, why would we have used `var` here?
   var top = 0
