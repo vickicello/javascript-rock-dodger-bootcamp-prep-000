@@ -59,7 +59,8 @@ moveRock();
    * seems like a good pace.)
    */
   function moveRock() {
-    top+=2
+    top+=2;
+    rock.style.top=
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
