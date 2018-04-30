@@ -60,11 +60,11 @@ moveRock();
     rock.style.top=`${top}px`;
     
     if(checkCollision(rock)) {
-      endGame()
+      endGame();
+    } else {
+      moveRock()
     }
-     * If a rock collides with the DODGER,
-     * we should call endGame()
-     */
+    
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
