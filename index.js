@@ -110,7 +110,7 @@ function moveDodgerLeft() {
  }
 
 function moveDodgerRight() {
- var currentPos = positionToInteger(DODGER.style.right);
+ var currentPos = positionToInteger(DODGER.style.left);
  function moveRight() {
    if(currentPos<=356) {
      DODGER.style.right=`${currentPos+4}px`;
