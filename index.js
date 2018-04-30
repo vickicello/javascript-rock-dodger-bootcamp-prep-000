@@ -116,6 +116,7 @@ function moveDodgerRight() {
      DODGER.style.left=`${currentPos+4}px`;
    }
  }
+ window.requestAnimationFrame(moveRight);
 }
 
 /**
