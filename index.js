@@ -61,8 +61,11 @@ moveRock();
     
     if(checkCollision(rock)) {
       endGame();
+       if(top>=400) {
+       rock.remove();
+      }
     } else {
-      moveRock()
+      
     }
     
 
