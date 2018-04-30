@@ -83,7 +83,7 @@ window.requestAnimationFrame(moveRock);
  */
 function endGame() {
   clearInterval(gameInterval);
-  
+  ROCKS.for
 }
 
 function moveDodger(e) {
