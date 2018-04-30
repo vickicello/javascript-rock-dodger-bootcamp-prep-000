@@ -65,7 +65,7 @@ moveRock();
        rock.remove();
       }
     } else {
-      
+      window.requestAnimationFrame()
     }
     
 
