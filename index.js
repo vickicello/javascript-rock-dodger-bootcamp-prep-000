@@ -97,17 +97,18 @@ function moveDodger(e) {
   else {
     
   }
+}
 
 function moveDodgerLeft() {
-  
- var currentPos = positionToInteger(DODGER.style.left);
+  var currentPos = positionToInteger(DODGER.style.left);
   function moveLeft() {
     if(currentPos>=4) {
     DODGER.style.left=`${currentPos-4}px`;
   }
-  }
-  window.requestAnimationFrame(moveLeft);
- }
+}
+window.requestAnimationFrame(moveLeft);
+  
+}
 
 function moveDodgerRight() {
  var currentPos = positionToInteger(DODGER.style.left);
