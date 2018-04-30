@@ -84,7 +84,7 @@ function endGame() {
 }
 
 function moveDodger(e) {
-  if(keypresmoveDodgerLeft()
+  if(e.which ==moveDodgerLeft()
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
